@@ -44,7 +44,7 @@ def makeCompilation(path = "./",
     totalLength = 0
     for fileName in os.listdir(path):
         
-        filePath = join(path, fileName);
+        filePath = join(path, fileName)
         if isfile(filePath) and fileName.endswith(".mp4"):
             print(fileName)
             if os.stat(filePath).st_size < 5000:
